@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Maquetació</title>
+    <style type="text/css">
+        :root{
+            --titular:2vw; 
+            --cos:1em;
+            --cfonts:grey;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 14px;
+        }
+        img{
+            width: 100%;
+        }
+        h1{
+            font-size: var(--titular);
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        section{
+            width: 50%;
+            height: 100vh;
+        }
+         header section:first-child{
+            background: blue;
+            position: relative;
+        }
+        header section:first-child img{
+            height: 100%;
+            object-fit: cover; 
+            object-position: center center;
+        }
+        header section:last-child{
+            background:red;
+            position: relative;
+        }
+        header section:last-child img{
+            height: 100%;
+            object-fit: cover; 
+            object-position: center center;
+        }
+        h1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 4vw;
+            font-family: "Arial", "Charcoal", sans-serif;
+            color: white;
+        }
+        main{
+            clear: both;
+            position: relative;
+            width: 600px;
+            margin: auto;
+            font-family: "helvetica" ; 
+        }
+        main>p{
+            position: relative;
+            line-height: 1.4em;
+            padding: 5em 0;
+            margin: 3px;
+            color: var(--cfonts);
+            column-count: 2;
+            column-gap: 30px;
+            column-rule:1px solid var(--cfonts);
+            text-align: justify;
+            hyphens: auto;
+        }
+        article{
+            padding: 0 4em;
+            color: black;
+        }
+        article p{
+            margin: 0 0 1.2em 0;
+            text-align: justify;
+            hyphens: auto;
+        }
+        article p:first-child::first-letter{
+            color: var(--cfonts);
+            font-size: 8em;
+            float: left;
+            line-height: 6rem;
+            padding-right: 1rem;
+            padding-left: 0.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .cercle{
+            background: var (--cfonts);
+            border-radius: 50%;
+            shape-outside: circle(50%) border-box;
+            float: left;
+            max-width: 20em;
+            margin-left: -8em;
+            shape-margin: 1em;
+         }
+       .cercle img{
+            mix-blend-mode: hard-light;
+            border-radius: 50%;
+            shape-outside: circle(50%)
+        }
+        .hexagon{
+            background: var(--cfonts);
+            float: right;
+            max-width: 18em;
+            margin-right: -10em;
+            shape-margin: 2em;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)border-box;    
+        }
+        .hexagon img{
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        @media (max-width:600px){
+            body{
+                font-size: 12px;
+                background: blue;
+            }
+        }
+    </style>   
+    </head>
+    <body>
+        <header>
+            <section>
+                <img src=images/Chico&Rita%20copia.jpg alt="">
+                <h1>Mariscal<br>Chico&Rita</h1>
+            </section> 
+            <section>
+            <img src="images/chiasso.jpg" alt="">
+            <h1>Monguzzi<br>Chiasso Jazz</h1>
+            </section>
+        </header>
+        <main><p>El diseño es un elemento de la vida que combina imaginación, creatividad, libertad de expresión, y visión. Pero hay algo que muchas personas no saben sobre dicha rama del arte: todos podemos hacerlo.El Diseño Gráfico es el arte de comunicación visual a través de texto, imágenes, símbolos o ilustraciones. Cada persona implementa y desarrolla su diseño en orden a su personalidad, ideas y objetivos. Pero es siempre importante tener en cuenta aspectos básicos que van a facilitar la visión principal de dicha creación.Lo importante es que lo que hace al diseñador es las ganas de aprender y no tener miedo de intentar crear nuevos proyectos o ideas que están circulando en tu cabeza.</p>
+                <article>
+                <p>Javier Errando Mariscal (Valencia, 9 de febrero de 1950) es un diseñador multidisciplinario español. Desde 1970 vive y trabaja en Barcelona.Cursó estudios de diseño en la escuela Elisava de Barcelona pero pronto lo dejó para aprender directamente del entorno y para seguir sus propios impulsos creativos.En 1989 diseñó a Cobi la mascota para los Juegos Olímpicos de Barcelona 1992. La mascota fue acogida con gran polémica por su imagen rupturista, aunque el tiempo le dio la razón a su creador y ahora Cobi es reconocida como la más rentable de la historia de los Juegos modernos. Más adelante vendría la serie de animación The Cobi Troupe.</p>
+                <img src="images/cobi.jpg">
+                <p>A fines de 1980 había desarrollado su estilo característico, el uso de “sucio” de tipo y no convencionales técnicas fotográficas. Fue por esto que fue duramente criticado por los “catedraticos” del diseño, el diseño reglamentado o de “la vieja escuela” del diseño, calificando su trabajo como un absurdo, ilegíble y sin sentido de la coherencia. </p>
+                <div class="cercle">
+                    <img src="images/Mariscal_Javier_2.jpg">
+                </div>
+                <p> En 2010 presentó la exposición retrospectiva del trabajo de Javier Mariscal y Estudio Mariscal, Mariscal en la Pedrera, llena de color y sorpresas, que recibió 150.000 visitantes. Publicó la novela gráfica Chico & Rita, editada por Sins Entido y la película de animación Chico & Rita viajó por festivales internacionales de cine de todo el mundo. La película se ha estrenado en España el 25 de febrero de 2011. En el Salone del Mobile di Milano 2011 ha presentado piezas de mobiliario para Artemide, Nemo Cassina, Leuco, Uno Design, Mobles 114 y Vondom. Desde el 2014, es miembro del claustro de profesores del Centro Universitario CESINE de Santander en los grados de diseño.</p>
+                <div class="hexagon">
+                    <img src="images/Monguzzi_cara.jpg">
+                </div>
+                <p>Bruno monguzzi es diseñador gráfico, tipógrafo y educador suizo.Sus proyectos más importantes incluyen carteles para el museo cantonale d'arte en lugano y la identidad visual del museo d'orsay en parís. monguzzi ha dado conferencias en todo el mundo y es miembro de la prestigiosa alianza Graphique Internationale.Las tareas que muchos diseñadores hoy en día harían en la computadora, Monguzzi prefiere hacer con sus manos. Utiliza herramientas tradicionales, como bolígrafos y tijeras, organiza pliegos impresos, corta y dibuja, y realmente disfruta de la materialidad del proceso. Por lo tanto, sus obras tienen una gran calidad táctil y sus libros y catálogos a veces recuerdan al espectador objetos escultóricos que se desarrollan en el espacio y el tiempo.</p>
+            </article>
+        </main>
+    </body>
+</html>
